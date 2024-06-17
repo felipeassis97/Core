@@ -8,7 +8,7 @@
 import Foundation
 
 struct Core {
-    static func counter() {
+    public static func counter() {
         print("Using core module")
     }
 }

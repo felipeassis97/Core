@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Core'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Core services for iOS apps'
 
   s.description      = 'Core services for global apps on iOS'
