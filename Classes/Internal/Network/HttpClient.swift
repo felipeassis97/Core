@@ -10,8 +10,8 @@ import Foundation
 struct HTTPClient: IHttpClient {
     //MARK: POST
     func post<T>(path: String, 
-                 header: [String : String]?,
-                 body: [String : String]?,
+                 header: [String : String]? = nil,
+                 body: [String : String]? = nil,
                  responseModel: T.Type?) async throws -> Result<T?, RequestError> where T : Decodable {
         
         guard let url = URL(string: path) else {
@@ -30,7 +30,7 @@ struct HTTPClient: IHttpClient {
     
     //MARK: GET
     func get<T: Decodable>(path: String,
-                           header: [String: String]?,
+                           header: [String : String]? = nil,
                            responseModel: T.Type?) async throws -> Result<T?, RequestError> {
         
         guard let url = URL(string: path) else {
