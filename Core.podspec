@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Core'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Core services for iOS apps'
 
   s.description      = 'Core services for global apps on iOS'
@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '16.0'
   s.swift_version = '5.0'
 
-  s.source_files = 'Core/Classes/**/*'
-
+  s.source_files = 'Classes/**/*'
+  
 end
