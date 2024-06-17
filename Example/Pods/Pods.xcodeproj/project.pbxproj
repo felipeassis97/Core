@@ -14,9 +14,24 @@
 		41938B9BFBF55895E1E63E5294861745 /* Pods-Core_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D46C1528E4144537CCBA54D87424C3 /* Pods-Core_Example-dummy.m */; };
 		50F1F75374A512DB224D4C24C001863F /* Pods-Core_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CEB84AE1B13C5FD7DEE749008CDAF3 /* Pods-Core_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6687F37E2FBABBF923C4CE9260E324BB /* Core-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AAF9079375A1AEA18FE28340818C484 /* Core-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E85441A2C1FCC4100572C84 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8544192C1FCC4100572C84 /* Main.swift */; };
-		9E85441B2C1FCC4100572C84 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8544192C1FCC4100572C84 /* Main.swift */; };
-		9E85441C2C1FCC4100572C84 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8544192C1FCC4100572C84 /* Main.swift */; };
+		9E1F6D7D2C20D62800CACAEB /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D7C2C20D62800CACAEB /* HttpClient.swift */; };
+		9E1F6D7E2C20D62800CACAEB /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D7C2C20D62800CACAEB /* HttpClient.swift */; };
+		9E1F6D7F2C20D62800CACAEB /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D7C2C20D62800CACAEB /* HttpClient.swift */; };
+		9E1F6D812C20D64000CACAEB /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D802C20D64000CACAEB /* RequestError.swift */; };
+		9E1F6D822C20D64000CACAEB /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D802C20D64000CACAEB /* RequestError.swift */; };
+		9E1F6D832C20D64000CACAEB /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D802C20D64000CACAEB /* RequestError.swift */; };
+		9E1F6D852C20D64500CACAEB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D842C20D64500CACAEB /* Endpoint.swift */; };
+		9E1F6D862C20D64500CACAEB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D842C20D64500CACAEB /* Endpoint.swift */; };
+		9E1F6D872C20D64500CACAEB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D842C20D64500CACAEB /* Endpoint.swift */; };
+		9E1F6D892C20D68000CACAEB /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D882C20D68000CACAEB /* RequestMethod.swift */; };
+		9E1F6D8A2C20D68000CACAEB /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D882C20D68000CACAEB /* RequestMethod.swift */; };
+		9E1F6D8B2C20D68000CACAEB /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D882C20D68000CACAEB /* RequestMethod.swift */; };
+		9E1F6D922C20D77F00CACAEB /* URL+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D912C20D77F00CACAEB /* URL+.swift */; };
+		9E1F6D932C20D77F00CACAEB /* URL+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D912C20D77F00CACAEB /* URL+.swift */; };
+		9E1F6D942C20D77F00CACAEB /* URL+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D912C20D77F00CACAEB /* URL+.swift */; };
+		9E1F6D962C20D7B900CACAEB /* DictionaryDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D952C20D7B900CACAEB /* DictionaryDecodable.swift */; };
+		9E1F6D972C20D7B900CACAEB /* DictionaryDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D952C20D7B900CACAEB /* DictionaryDecodable.swift */; };
+		9E1F6D982C20D7B900CACAEB /* DictionaryDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6D952C20D7B900CACAEB /* DictionaryDecodable.swift */; };
 		E593C6DDEDC53D4F421F3785EB206228 /* Pods-Core_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10677D1254F134BA01436A47AFA8DEA9 /* Pods-Core_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2869A0D7B3850BE3AD24591C5B13323 /* Core-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E6FF6DF071C8D29E3DB23CDC53EA1D /* Core-dummy.m */; };
 /* End PBXBuildFile section */
@@ -56,7 +71,12 @@
 		8AAF9079375A1AEA18FE28340818C484 /* Core-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Core-umbrella.h"; sourceTree = "<group>"; };
 		9A31757F96285ECEE04ACC3ABB806795 /* Pods-Core_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Core_Tests.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E8544192C1FCC4100572C84 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main.swift; path = Classes/Main.swift; sourceTree = "<group>"; };
+		9E1F6D7C2C20D62800CACAEB /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpClient.swift; path = ../Classes/Network/HttpClient.swift; sourceTree = "<group>"; };
+		9E1F6D802C20D64000CACAEB /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestError.swift; path = ../Classes/Network/RequestError.swift; sourceTree = "<group>"; };
+		9E1F6D842C20D64500CACAEB /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = ../Classes/Network/Endpoint.swift; sourceTree = "<group>"; };
+		9E1F6D882C20D68000CACAEB /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestMethod.swift; path = ../Classes/Network/RequestMethod.swift; sourceTree = "<group>"; };
+		9E1F6D912C20D77F00CACAEB /* URL+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "URL+.swift"; path = "../Classes/Extensions/URL+.swift"; sourceTree = "<group>"; };
+		9E1F6D952C20D7B900CACAEB /* DictionaryDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DictionaryDecodable.swift; path = ../DictionaryDecodable.swift; sourceTree = "<group>"; };
 		9FF43A221252DFAF4B42C955A73CBDFD /* Pods_Core_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E6FF6DF071C8D29E3DB23CDC53EA1D /* Core-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Core-dummy.m"; sourceTree = "<group>"; };
 		B22198273CEC8BFA2117525ACAF89C1D /* Core.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Core.modulemap; sourceTree = "<group>"; };
@@ -105,7 +125,8 @@
 		418843197AC7BA53F2896AF1908E1976 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				9E8544192C1FCC4100572C84 /* Main.swift */,
+				9E1F6D8C2C20D73900CACAEB /* Extensions */,
+				9E1F6D772C20D5D200CACAEB /* Network */,
 				6A27B106FFB1DE5EE53E35C6C02AE946 /* Pod */,
 				66EF287C3955B2DE74D8DA550268F1D2 /* Support Files */,
 			);
@@ -161,6 +182,26 @@
 				418843197AC7BA53F2896AF1908E1976 /* Core */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9E1F6D772C20D5D200CACAEB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9E1F6D882C20D68000CACAEB /* RequestMethod.swift */,
+				9E1F6D842C20D64500CACAEB /* Endpoint.swift */,
+				9E1F6D802C20D64000CACAEB /* RequestError.swift */,
+				9E1F6D7C2C20D62800CACAEB /* HttpClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9E1F6D8C2C20D73900CACAEB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E1F6D912C20D77F00CACAEB /* URL+.swift */,
+				9E1F6D952C20D7B900CACAEB /* DictionaryDecodable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AAE6F39B6C6455AEE703507137E1EFA7 /* Products */ = {
@@ -381,7 +422,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E85441C2C1FCC4100572C84 /* Main.swift in Sources */,
+				9E1F6D7F2C20D62800CACAEB /* HttpClient.swift in Sources */,
+				9E1F6D942C20D77F00CACAEB /* URL+.swift in Sources */,
+				9E1F6D8B2C20D68000CACAEB /* RequestMethod.swift in Sources */,
+				9E1F6D832C20D64000CACAEB /* RequestError.swift in Sources */,
+				9E1F6D982C20D7B900CACAEB /* DictionaryDecodable.swift in Sources */,
+				9E1F6D872C20D64500CACAEB /* Endpoint.swift in Sources */,
 				00D5ECEF09BFC71A2B648F58C88B361D /* Pods-Core_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +436,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E85441B2C1FCC4100572C84 /* Main.swift in Sources */,
+				9E1F6D7E2C20D62800CACAEB /* HttpClient.swift in Sources */,
+				9E1F6D932C20D77F00CACAEB /* URL+.swift in Sources */,
+				9E1F6D8A2C20D68000CACAEB /* RequestMethod.swift in Sources */,
+				9E1F6D822C20D64000CACAEB /* RequestError.swift in Sources */,
+				9E1F6D972C20D7B900CACAEB /* DictionaryDecodable.swift in Sources */,
+				9E1F6D862C20D64500CACAEB /* Endpoint.swift in Sources */,
 				41938B9BFBF55895E1E63E5294861745 /* Pods-Core_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,7 +450,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E85441A2C1FCC4100572C84 /* Main.swift in Sources */,
+				9E1F6D7D2C20D62800CACAEB /* HttpClient.swift in Sources */,
+				9E1F6D922C20D77F00CACAEB /* URL+.swift in Sources */,
+				9E1F6D892C20D68000CACAEB /* RequestMethod.swift in Sources */,
+				9E1F6D812C20D64000CACAEB /* RequestError.swift in Sources */,
+				9E1F6D962C20D7B900CACAEB /* DictionaryDecodable.swift in Sources */,
+				9E1F6D852C20D64500CACAEB /* Endpoint.swift in Sources */,
 				F2869A0D7B3850BE3AD24591C5B13323 /* Core-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
