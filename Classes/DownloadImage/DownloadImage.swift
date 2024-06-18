@@ -10,15 +10,15 @@ import Combine
 
 public class DownloadImage: ObservableObject {
     
-    @Published var image: UIImage? = nil
-    @Published var isLoading: Bool = false
+    @Published public var image: UIImage? = nil
+    @Published public var isLoading: Bool = false
     
-    private let imageCache = NSCache<NSString, UIImage>()
-    private var cancellables = Set<AnyCancellable>()
+    public let imageCache = NSCache<NSString, UIImage>()
+    public var cancellables = Set<AnyCancellable>()
     
     public init() {}
     
-    func download(from imageURL: String) {
+    public func download(from imageURL: String) {
         guard let url = URL(string: imageURL) else {
             self.image = UIImage(systemName: "exclamationmark.triangle.fill")
             return
