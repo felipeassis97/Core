@@ -29,12 +29,12 @@
 		9E1F6DFF2C21057C00CACAEB /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6DF82C21057C00CACAEB /* RequestError.swift */; };
 		9E1F6E002C21057C00CACAEB /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6DF82C21057C00CACAEB /* RequestError.swift */; };
 		9E1F6E012C21057C00CACAEB /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6DF82C21057C00CACAEB /* RequestError.swift */; };
-		9E1F6E0C2C21192000CACAEB /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E0B2C21192000CACAEB /* DownloadImage.swift */; };
-		9E1F6E0D2C21192000CACAEB /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E0B2C21192000CACAEB /* DownloadImage.swift */; };
-		9E1F6E0E2C21192000CACAEB /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E0B2C21192000CACAEB /* DownloadImage.swift */; };
-		9E1F6E102C21193500CACAEB /* IDownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E0F2C21193500CACAEB /* IDownloadImage.swift */; };
-		9E1F6E112C21193500CACAEB /* IDownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E0F2C21193500CACAEB /* IDownloadImage.swift */; };
-		9E1F6E122C21193500CACAEB /* IDownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E0F2C21193500CACAEB /* IDownloadImage.swift */; };
+		9E1F6E172C211B9000CACAEB /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E152C211B9000CACAEB /* DownloadImage.swift */; };
+		9E1F6E182C211B9000CACAEB /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E152C211B9000CACAEB /* DownloadImage.swift */; };
+		9E1F6E192C211B9000CACAEB /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E152C211B9000CACAEB /* DownloadImage.swift */; };
+		9E1F6E1A2C211B9000CACAEB /* IDownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E162C211B9000CACAEB /* IDownloadImage.swift */; };
+		9E1F6E1B2C211B9000CACAEB /* IDownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E162C211B9000CACAEB /* IDownloadImage.swift */; };
+		9E1F6E1C2C211B9000CACAEB /* IDownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6E162C211B9000CACAEB /* IDownloadImage.swift */; };
 		E593C6DDEDC53D4F421F3785EB206228 /* Pods-Core_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10677D1254F134BA01436A47AFA8DEA9 /* Pods-Core_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2869A0D7B3850BE3AD24591C5B13323 /* Core-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E6FF6DF071C8D29E3DB23CDC53EA1D /* Core-dummy.m */; };
 /* End PBXBuildFile section */
@@ -79,8 +79,8 @@
 		9E1F6DF62C21057C00CACAEB /* IHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IHttpClient.swift; path = ../Classes/Network/IHttpClient.swift; sourceTree = "<group>"; };
 		9E1F6DF72C21057C00CACAEB /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpClient.swift; path = ../Classes/Network/HttpClient.swift; sourceTree = "<group>"; };
 		9E1F6DF82C21057C00CACAEB /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestError.swift; path = ../Classes/Network/RequestError.swift; sourceTree = "<group>"; };
-		9E1F6E0B2C21192000CACAEB /* DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DownloadImage.swift; path = ../../ShoeStore/ShoeStore/Features/Home/View/Components/DownloadImage.swift; sourceTree = "<group>"; };
-		9E1F6E0F2C21193500CACAEB /* IDownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IDownloadImage.swift; path = ../../ShoeStore/ShoeStore/Features/Home/View/Components/IDownloadImage.swift; sourceTree = "<group>"; };
+		9E1F6E152C211B9000CACAEB /* DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadImage.swift; path = ../Classes/DownloadImage/DownloadImage.swift; sourceTree = "<group>"; };
+		9E1F6E162C211B9000CACAEB /* IDownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IDownloadImage.swift; path = ../Classes/DownloadImage/IDownloadImage.swift; sourceTree = "<group>"; };
 		9FF43A221252DFAF4B42C955A73CBDFD /* Pods_Core_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E6FF6DF071C8D29E3DB23CDC53EA1D /* Core-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Core-dummy.m"; sourceTree = "<group>"; };
 		B22198273CEC8BFA2117525ACAF89C1D /* Core.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Core.modulemap; sourceTree = "<group>"; };
@@ -211,8 +211,8 @@
 		9E1F6E0A2C2118F100CACAEB /* DownloadImage */ = {
 			isa = PBXGroup;
 			children = (
-				9E1F6E0B2C21192000CACAEB /* DownloadImage.swift */,
-				9E1F6E0F2C21193500CACAEB /* IDownloadImage.swift */,
+				9E1F6E152C211B9000CACAEB /* DownloadImage.swift */,
+				9E1F6E162C211B9000CACAEB /* IDownloadImage.swift */,
 			);
 			path = DownloadImage;
 			sourceTree = "<group>";
@@ -437,8 +437,8 @@
 			files = (
 				9E1F6E012C21057C00CACAEB /* RequestError.swift in Sources */,
 				9E1F6DF22C21053600CACAEB /* DictionaryDecodable.swift in Sources */,
-				9E1F6E0E2C21192000CACAEB /* DownloadImage.swift in Sources */,
-				9E1F6E122C21193500CACAEB /* IDownloadImage.swift in Sources */,
+				9E1F6E192C211B9000CACAEB /* DownloadImage.swift in Sources */,
+				9E1F6E1C2C211B9000CACAEB /* IDownloadImage.swift in Sources */,
 				9E1F6DF52C21053600CACAEB /* URL+.swift in Sources */,
 				9E1F6DFB2C21057C00CACAEB /* IHttpClient.swift in Sources */,
 				9E1F6DFE2C21057C00CACAEB /* HttpClient.swift in Sources */,
@@ -452,8 +452,8 @@
 			files = (
 				9E1F6E002C21057C00CACAEB /* RequestError.swift in Sources */,
 				9E1F6DF12C21053600CACAEB /* DictionaryDecodable.swift in Sources */,
-				9E1F6E0D2C21192000CACAEB /* DownloadImage.swift in Sources */,
-				9E1F6E112C21193500CACAEB /* IDownloadImage.swift in Sources */,
+				9E1F6E182C211B9000CACAEB /* DownloadImage.swift in Sources */,
+				9E1F6E1B2C211B9000CACAEB /* IDownloadImage.swift in Sources */,
 				9E1F6DF42C21053600CACAEB /* URL+.swift in Sources */,
 				9E1F6DFA2C21057C00CACAEB /* IHttpClient.swift in Sources */,
 				9E1F6DFD2C21057C00CACAEB /* HttpClient.swift in Sources */,
@@ -467,8 +467,8 @@
 			files = (
 				9E1F6DFF2C21057C00CACAEB /* RequestError.swift in Sources */,
 				9E1F6DF02C21053600CACAEB /* DictionaryDecodable.swift in Sources */,
-				9E1F6E0C2C21192000CACAEB /* DownloadImage.swift in Sources */,
-				9E1F6E102C21193500CACAEB /* IDownloadImage.swift in Sources */,
+				9E1F6E172C211B9000CACAEB /* DownloadImage.swift in Sources */,
+				9E1F6E1A2C211B9000CACAEB /* IDownloadImage.swift in Sources */,
 				9E1F6DF32C21053600CACAEB /* URL+.swift in Sources */,
 				9E1F6DF92C21057C00CACAEB /* IHttpClient.swift in Sources */,
 				9E1F6DFC2C21057C00CACAEB /* HttpClient.swift in Sources */,
