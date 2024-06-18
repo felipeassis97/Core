@@ -13,7 +13,12 @@ public protocol IHttpClient {
                            responseModel: T.Type?) async throws -> Result<T?, RequestError>
     
     func post<T: Decodable>(path: String,
-                           header: [String: String]?,
+                            header: [String: String]?,
                             body: [String: String]?,
-                           responseModel: T.Type?) async throws -> Result<T?, RequestError>
+                            responseModel: T.Type?) async throws -> Result<T?, RequestError>
+}
+
+//MARK: Bind
+public func getClient() -> IHttpClient {
+    return HTTPClient()
 }

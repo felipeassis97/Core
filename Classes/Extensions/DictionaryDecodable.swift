@@ -11,8 +11,7 @@ enum DecodingError: Error {
     case dataCorruptedError
 }
 
-public struct DictionaryDecodable: Decodable {
-    
+ struct DictionaryDecodable: Decodable {
     var value: Any
     
     private struct CodingKeys: CodingKey {

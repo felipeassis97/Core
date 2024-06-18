@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct HTTPClient: IHttpClient {
+private struct HTTPClient: IHttpClient {
+    
     //MARK: POST
-    func post<T>(path: String, 
+    func post<T>(path: String,
                  header: [String : String]? = nil,
                  body: [String : String]? = nil,
                  responseModel: T.Type?) async throws -> Result<T?, RequestError> where T : Decodable {
@@ -40,7 +41,7 @@ struct HTTPClient: IHttpClient {
         var request = URLRequest(url: url)
         request.allHTTPHeaderFields = header
         request.httpMethod = "GET"
-
+        
         return try await validateResponse(request: request, responseModel: responseModel)
     }
     
