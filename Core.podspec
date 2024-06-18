@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Core'
-  s.version          = '1.2.2'
+  s.version          = '1.2.3'
   s.summary          = 'Core services for iOS apps'
   s.description      = 'This package was created to facilitate the setup of new projects, bringing with it an implementation with the main services used in all apps, such as an HTTP client, use of internal storage and some useful extensions'
 
@@ -14,7 +14,5 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.source_files = 'Classes/**/*'
   
-  s.dependency 'Kingfisher'
-
 end
 

@@ -14,5 +14,5 @@ public protocol IDownloadImage {
 
 //MARK: Bind
 public func getDownloader() -> IDownloadImage {
-    return DownloadImageKingFisher()
+    return DownloadImage()
 }
