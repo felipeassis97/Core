@@ -7,12 +7,12 @@
 
 import Foundation
 
-public protocol IDownloadImage {
+public protocol IDownloadImage: ObservableObject {
     func download(from imageURL: String)
 }
 
 
 //MARK: Bind
-public func getDownloader() -> IDownloadImage {
+public func getDownloader() -> any IDownloadImage {
     return ImageLoader()
 }
