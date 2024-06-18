@@ -5,37 +5,76 @@
 //  Created by Felipe Assis on 18/6/2024.
 //
 
-import UIKit
 import SwiftUI
+import Combine
 
-struct DownloadImage: IDownloadImage {
-    func download(from imageURL: String) async throws -> UIImage? {
+class ImageLoader: IDownloadImage, ObservableObject {
+    @Published var image: UIImage? = nil
+    @Published var isLoading: Bool = false
 
-        let imageCache = NSCache<NSString, UIImage>()
+    private let imageCache = NSCache<NSString, UIImage>()
+    private var cancellables = Set<AnyCancellable>()
+
+    func download(from imageURL: String) {
         guard let url = URL(string: imageURL) else {
-            return UIImage(systemName: "exclamationmark.triangle.fill")
+            self.image = UIImage(systemName: "exclamationmark.triangle.fill")
+            return
         }
 
-        //Check if exists in cache
+        // Check if exists in cache
         if let cachedImage = imageCache.object(forKey: imageURL as NSString) {
-            return cachedImage
+            self.image = cachedImage
+            return
         }
 
-        do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            guard let image =  UIImage(data: data) else {
-                return UIImage(systemName: "exclamationmark.triangle.fill")
+        // Start loading
+        self.isLoading = true
+
+        URLSession.shared.dataTaskPublisher(for: url)
+            .map { UIImage(data: $0.data) }
+            .replaceError(with: UIImage(systemName: "exclamationmark.triangle.fill"))
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] downloadedImage in
+                self?.isLoading = false
+                if let image = downloadedImage {
+                    self?.imageCache.setObject(image, forKey: imageURL as NSString)
+                    self?.image = image
+                } else {
+                    self?.image = UIImage(systemName: "exclamationmark.triangle.fill")
+                }
             }
-            //Save in cache
-            imageCache.setObject(image, forKey: imageURL as NSString)
-            return image
-        }
-        catch {
-            print("Error when download image: \(error)")
-            return UIImage(systemName: "exclamationmark.triangle.fill")
-        }
+            .store(in: &cancellables)
     }
 }
+
+//struct DownloadImage: IDownloadImage {
+//    func download(from imageURL: String) async throws -> UIImage? {
+//
+//        let imageCache = NSCache<NSString, UIImage>()
+//        guard let url = URL(string: imageURL) else {
+//            return UIImage(systemName: "exclamationmark.triangle.fill")
+//        }
+//
+//        //Check if exists in cache
+//        if let cachedImage = imageCache.object(forKey: imageURL as NSString) {
+//            return cachedImage
+//        }
+//
+//        do {
+//            let (data, _) = try await URLSession.shared.data(from: url)
+//            guard let image =  UIImage(data: data) else {
+//                return UIImage(systemName: "exclamationmark.triangle.fill")
+//            }
+//            //Save in cache
+//            imageCache.setObject(image, forKey: imageURL as NSString)
+//            return image
+//        }
+//        catch {
+//            print("Error when download image: \(error)")
+//            return UIImage(systemName: "exclamationmark.triangle.fill")
+//        }
+//    }
+//}
 
 
 //struct DownloadImageKingFisher: IDownloadImage {

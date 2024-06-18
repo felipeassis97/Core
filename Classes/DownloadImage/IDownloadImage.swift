@@ -8,11 +8,11 @@
 import Foundation
 
 public protocol IDownloadImage {
-    func download(from imageURL: String) async throws -> UIImage?
+    func download(from imageURL: String)
 }
 
 
 //MARK: Bind
 public func getDownloader() -> IDownloadImage {
-    return DownloadImage()
+    return ImageLoader()
 }
