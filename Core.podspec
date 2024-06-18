@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Core'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'Core services for iOS apps'
   s.description      = 'This package was created to facilitate the setup of new projects, bringing with it an implementation with the main services used in all apps, such as an HTTP client, use of internal storage and some useful extensions'
 
