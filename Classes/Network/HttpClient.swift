@@ -7,7 +7,7 @@
 
 import Foundation
 
-private struct HTTPClient: IHttpClient {
+struct HTTPClient: IHttpClient {
     
     //MARK: POST
     func post<T>(path: String,
