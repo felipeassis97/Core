@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Image {
-   public func fromBase64(base64: String) -> Image {
+   public static func fromBase64(base64: String) -> Image {
          let defaultUIImage = UIImage(systemName: "exclamationmark.triangle.fill") ?? UIImage()
          let defaultImage = Image(uiImage: defaultUIImage)
 
