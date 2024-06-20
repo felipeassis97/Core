@@ -51,18 +51,19 @@
 		983853F97E0D21A8C650D490C82B4DEA /* SizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749FEA3B358CD6989D0D3404C3730A9D /* SizeExtensions.swift */; };
 		9BA2366D8D3942814D2246743FD9E468 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC02F009A9041C823D1B34CA88A2EDD /* Source.swift */; };
 		9E1B87F5D08F2B96356EA62DE1DF5B24 /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939BCE06B68A4E1BFB4484953087816F /* CallbackQueue.swift */; };
-		9EFEE2662C2223E3001D9680 /* ISecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2622C2223E3001D9680 /* ISecureStorage.swift */; };
-		9EFEE2672C2223E3001D9680 /* ISecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2622C2223E3001D9680 /* ISecureStorage.swift */; };
-		9EFEE2682C2223E3001D9680 /* ISecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2622C2223E3001D9680 /* ISecureStorage.swift */; };
-		9EFEE2692C2223E3001D9680 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2632C2223E3001D9680 /* KeychainHelper.swift */; };
-		9EFEE26A2C2223E3001D9680 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2632C2223E3001D9680 /* KeychainHelper.swift */; };
-		9EFEE26B2C2223E3001D9680 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2632C2223E3001D9680 /* KeychainHelper.swift */; };
-		9EFEE26C2C2223E3001D9680 /* ICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2642C2223E3001D9680 /* ICacheManager.swift */; };
-		9EFEE26D2C2223E3001D9680 /* ICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2642C2223E3001D9680 /* ICacheManager.swift */; };
-		9EFEE26E2C2223E3001D9680 /* ICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2642C2223E3001D9680 /* ICacheManager.swift */; };
-		9EFEE26F2C2223E3001D9680 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2652C2223E3001D9680 /* UserDefaultsHelper.swift */; };
-		9EFEE2702C2223E3001D9680 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2652C2223E3001D9680 /* UserDefaultsHelper.swift */; };
-		9EFEE2712C2223E3001D9680 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEE2652C2223E3001D9680 /* UserDefaultsHelper.swift */; };
+		9EC983F42C23AAE600CFE1BF /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F02C23AAE600CFE1BF /* UserDefaultsHelper.swift */; };
+		9EC983F52C23AAE600CFE1BF /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F02C23AAE600CFE1BF /* UserDefaultsHelper.swift */; };
+		9EC983F62C23AAE600CFE1BF /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F02C23AAE600CFE1BF /* UserDefaultsHelper.swift */; };
+		9EC983F72C23AAE600CFE1BF /* ISecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F12C23AAE600CFE1BF /* ISecureStorage.swift */; };
+		9EC983F82C23AAE600CFE1BF /* ISecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F12C23AAE600CFE1BF /* ISecureStorage.swift */; };
+		9EC983F92C23AAE600CFE1BF /* ISecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F12C23AAE600CFE1BF /* ISecureStorage.swift */; };
+		9EC983FA2C23AAE600CFE1BF /* ICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F22C23AAE600CFE1BF /* ICacheManager.swift */; };
+		9EC983FB2C23AAE600CFE1BF /* ICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F22C23AAE600CFE1BF /* ICacheManager.swift */; };
+		9EC983FC2C23AAE600CFE1BF /* ICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F22C23AAE600CFE1BF /* ICacheManager.swift */; };
+		9EC983FD2C23AAE600CFE1BF /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F32C23AAE600CFE1BF /* KeychainHelper.swift */; };
+		9EC983FE2C23AAE600CFE1BF /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F32C23AAE600CFE1BF /* KeychainHelper.swift */; };
+		9EC983FF2C23AAE600CFE1BF /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC983F32C23AAE600CFE1BF /* KeychainHelper.swift */; };
+		9EC984012C23AC4E00CFE1BF /* Image+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC984002C23AC4E00CFE1BF /* Image+.swift */; };
 		A045993D6B84BBE9FB1A42FE508A32D0 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270478449C9B75369CFA265858382CA8 /* ExtensionHelpers.swift */; };
 		A0E4036D4C5E3580CC8AE1867653C6C7 /* KingfisherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC28444A5E5758AA578F1D79AEBBC10 /* KingfisherError.swift */; };
 		A38969C802D81B92C1B1E5B9BCB033D7 /* Kingfisher-Kingfisher in Resources */ = {isa = PBXBuildFile; fileRef = C298ABB78D9B05529B89D8322DB2E7B0 /* Kingfisher-Kingfisher */; };
@@ -218,10 +219,11 @@
 		9CF134F7AB1B3944639E653BD617B29B /* Core-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Core-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DE3A3B3AF8BFD07E75505CDE25B130D /* Core-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Core-dummy.m"; sourceTree = "<group>"; };
-		9EFEE2622C2223E3001D9680 /* ISecureStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ISecureStorage.swift; path = ../Classes/Cache/ISecureStorage.swift; sourceTree = "<group>"; };
-		9EFEE2632C2223E3001D9680 /* KeychainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainHelper.swift; path = ../Classes/Cache/KeychainHelper.swift; sourceTree = "<group>"; };
-		9EFEE2642C2223E3001D9680 /* ICacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ICacheManager.swift; path = ../Classes/Cache/ICacheManager.swift; sourceTree = "<group>"; };
-		9EFEE2652C2223E3001D9680 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsHelper.swift; path = ../Classes/Cache/UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		9EC983F02C23AAE600CFE1BF /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsHelper.swift; path = ../Classes/Cache/UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		9EC983F12C23AAE600CFE1BF /* ISecureStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ISecureStorage.swift; path = ../Classes/Cache/ISecureStorage.swift; sourceTree = "<group>"; };
+		9EC983F22C23AAE600CFE1BF /* ICacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ICacheManager.swift; path = ../Classes/Cache/ICacheManager.swift; sourceTree = "<group>"; };
+		9EC983F32C23AAE600CFE1BF /* KeychainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainHelper.swift; path = ../Classes/Cache/KeychainHelper.swift; sourceTree = "<group>"; };
+		9EC984002C23AC4E00CFE1BF /* Image+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+.swift"; sourceTree = "<group>"; };
 		9FF43A221252DFAF4B42C955A73CBDFD /* Pods_Core_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48AA64B0EFB8216D122377979A57939 /* Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Core.debug.xcconfig; sourceTree = "<group>"; };
 		A519BE1CC7E93E3862C1E99C075E77EB /* ImageFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFormat.swift; path = Sources/Image/ImageFormat.swift; sourceTree = "<group>"; };
@@ -321,7 +323,7 @@
 		0763A7A853A379F7B3003D76EB9FBBB0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				9EFEE2512C2221B9001D9680 /* Cache */,
+				9EC983EF2C23AAC500CFE1BF /* Cache */,
 				48B708F4D43241E785719365524B379A /* DownloadImage */,
 				FB92503412CB066B4E567A910969FA83 /* Extensions */,
 				7F6FB9149842D9F5D247CE402DD6121E /* Network */,
@@ -396,13 +398,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9EFEE2512C2221B9001D9680 /* Cache */ = {
+		9EC983EF2C23AAC500CFE1BF /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				9EFEE2642C2223E3001D9680 /* ICacheManager.swift */,
-				9EFEE2622C2223E3001D9680 /* ISecureStorage.swift */,
-				9EFEE2632C2223E3001D9680 /* KeychainHelper.swift */,
-				9EFEE2652C2223E3001D9680 /* UserDefaultsHelper.swift */,
+				9EC983F22C23AAE600CFE1BF /* ICacheManager.swift */,
+				9EC983F12C23AAE600CFE1BF /* ISecureStorage.swift */,
+				9EC983F32C23AAE600CFE1BF /* KeychainHelper.swift */,
+				9EC983F02C23AAE600CFE1BF /* UserDefaultsHelper.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -571,6 +573,7 @@
 		FB92503412CB066B4E567A910969FA83 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9EC984002C23AC4E00CFE1BF /* Image+.swift */,
 				5266E057A5972F9CC03D7EA63ED4395B /* DictionaryDecodable.swift */,
 				23078F5289B7FD6EA511F714B28F6953 /* URL+.swift */,
 			);
@@ -802,10 +805,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EFEE2712C2223E3001D9680 /* UserDefaultsHelper.swift in Sources */,
-				9EFEE2682C2223E3001D9680 /* ISecureStorage.swift in Sources */,
-				9EFEE26B2C2223E3001D9680 /* KeychainHelper.swift in Sources */,
-				9EFEE26E2C2223E3001D9680 /* ICacheManager.swift in Sources */,
+				9EC983F92C23AAE600CFE1BF /* ISecureStorage.swift in Sources */,
+				9EC983F62C23AAE600CFE1BF /* UserDefaultsHelper.swift in Sources */,
+				9EC983FC2C23AAE600CFE1BF /* ICacheManager.swift in Sources */,
+				9EC983FF2C23AAE600CFE1BF /* KeychainHelper.swift in Sources */,
 				00D5ECEF09BFC71A2B648F58C88B361D /* Pods-Core_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -894,12 +897,13 @@
 			files = (
 				AE8D62C43A8303BF92391CEFF28A6D74 /* Core-dummy.m in Sources */,
 				D9BF43278D197F6560A65006489A2769 /* DictionaryDecodable.swift in Sources */,
+				9EC983F42C23AAE600CFE1BF /* UserDefaultsHelper.swift in Sources */,
+				9EC983F72C23AAE600CFE1BF /* ISecureStorage.swift in Sources */,
 				CE4727DA11C87E50D640820250CA2FB8 /* DownloadImage.swift in Sources */,
+				9EC984012C23AC4E00CFE1BF /* Image+.swift in Sources */,
+				9EC983FD2C23AAE600CFE1BF /* KeychainHelper.swift in Sources */,
 				090EA90B58FBC40BE2C902F57002C946 /* HttpClient.swift in Sources */,
-				9EFEE2692C2223E3001D9680 /* KeychainHelper.swift in Sources */,
-				9EFEE2662C2223E3001D9680 /* ISecureStorage.swift in Sources */,
-				9EFEE26C2C2223E3001D9680 /* ICacheManager.swift in Sources */,
-				9EFEE26F2C2223E3001D9680 /* UserDefaultsHelper.swift in Sources */,
+				9EC983FA2C23AAE600CFE1BF /* ICacheManager.swift in Sources */,
 				C23837003544BEAA42E90270E4C059CE /* IHttpClient.swift in Sources */,
 				69E3F4EA78994658A5540CAD31E6E0A0 /* RequestError.swift in Sources */,
 				8987E3CA9DE690DEC1803A58B90A695E /* URL+.swift in Sources */,
@@ -910,10 +914,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EFEE2702C2223E3001D9680 /* UserDefaultsHelper.swift in Sources */,
-				9EFEE2672C2223E3001D9680 /* ISecureStorage.swift in Sources */,
-				9EFEE26A2C2223E3001D9680 /* KeychainHelper.swift in Sources */,
-				9EFEE26D2C2223E3001D9680 /* ICacheManager.swift in Sources */,
+				9EC983F82C23AAE600CFE1BF /* ISecureStorage.swift in Sources */,
+				9EC983F52C23AAE600CFE1BF /* UserDefaultsHelper.swift in Sources */,
+				9EC983FB2C23AAE600CFE1BF /* ICacheManager.swift in Sources */,
+				9EC983FE2C23AAE600CFE1BF /* KeychainHelper.swift in Sources */,
 				E4D962F43D027AA804DEF6D119794CF1 /* Pods-Core_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
