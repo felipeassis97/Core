@@ -1,6 +1,6 @@
 PODS:
-  - Core (1.2.1):
-    - Kingfisher
+  - Core (1.4.1):
+    - Kingfisher (~> 7.12.0)
   - Kingfisher (7.12.0)
 
 DEPENDENCIES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Core: 89f3a4a2936dbe434a081cff1e3c32bd4470e309
+  Core: e332fe5268a241d84639d20863e7fbf77b4db11c
   Kingfisher: 53a10ea35051a436b5fb626ca2dd8f3144d755e9
 
-PODFILE CHECKSUM: 90150696c67da20f00d3902c67ccca633d57f665
+PODFILE CHECKSUM: 83c39a76a48b78bd506af271a1dfcc42548bad07
 
 COCOAPODS: 1.15.2

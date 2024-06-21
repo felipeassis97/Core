@@ -1,6 +1,6 @@
 {
   "name": "Core",
-  "version": "1.2.1",
+  "version": "1.4.1",
   "summary": "Core services for iOS apps",
   "description": "This package was created to facilitate the setup of new projects, bringing with it an implementation with the main services used in all apps, such as an HTTP client, use of internal storage and some useful extensions",
   "homepage": "https://github.com/felipeassis97/Core",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/felipeassis97/Core.git",
-    "tag": "1.2.1"
+    "tag": "1.4.1"
   },
   "platforms": {
     "ios": "16.0"
@@ -22,7 +22,7 @@
   "source_files": "Classes/**/*",
   "dependencies": {
     "Kingfisher": [
-
+      "~> 7.12.0"
     ]
   },
   "swift_version": "5.0"
