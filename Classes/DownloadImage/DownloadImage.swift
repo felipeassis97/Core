@@ -6,10 +6,32 @@
 //
 
 import SwiftUI
+import Kingfisher
 import Combine
 
-public class DownloadImage: ObservableObject {
-    
+public struct ImageByURL: View {
+    @StateObject private var downloader = ImageDownloader()
+    let url: String
+
+    public var body: some View {
+        Group {
+            if downloader.isLoading {
+                ProgressView()
+            } else if let image = downloader.image {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            } else {
+                Image(systemName: "exclamationmark.triangle.fill")
+            }
+        }
+        .onAppear {
+            downloader.download(from: url)
+        }
+    }
+}
+
+public class ImageDownloader: ObservableObject {
     @Published public var image: UIImage? = nil
     @Published public var isLoading: Bool = false
     
@@ -33,19 +55,17 @@ public class DownloadImage: ObservableObject {
         // Start loading
         self.isLoading = true
         
-        URLSession.shared.dataTaskPublisher(for: url)
-            .map { UIImage(data: $0.data) }
-            .replaceError(with: UIImage(systemName: "exclamationmark.triangle.fill"))
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] downloadedImage in
-                self?.isLoading = false
-                if let image = downloadedImage {
-                    self?.imageCache.setObject(image, forKey: imageURL as NSString)
-                    self?.image = image
-                } else {
-                    self?.image = UIImage(systemName: "exclamationmark.triangle.fill")
+        KingfisherManager.shared.retrieveImage(with: url) { result in
+            DispatchQueue.main.async {
+                self.isLoading = false
+                switch result {
+                case .success(let value):
+                    self.imageCache.setObject(value.image, forKey: imageURL as NSString)
+                    self.image = value.image
+                case .failure:
+                    self.image = UIImage(systemName: "exclamationmark.triangle.fill")
                 }
             }
-            .store(in: &cancellables)
+        }
     }
 }

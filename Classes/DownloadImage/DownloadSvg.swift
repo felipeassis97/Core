@@ -5,13 +5,34 @@
 //  Created by Felipe Assis on 22/6/2024.
 //
 
-
 import SwiftUI
-import Combine
 import Kingfisher
+import Combine
 
-public class DownloadSVGImage: ObservableObject {
-    
+public struct SvgByURL: View {
+    @StateObject private var downloader = SVGImageDownloader()
+    let url: String
+
+    public var body: some View {
+        Group {
+            if downloader.isLoading {
+                ProgressView()
+            } else if let image = downloader.image {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            } else {
+                Image(systemName: "exclamationmark.triangle.fill")
+            }
+        }
+        .onAppear {
+            downloader.download(from: url)
+        }
+    }
+}
+
+
+public class SVGImageDownloader: ObservableObject {
     @Published public var image: UIImage? = nil
     @Published public var isLoading: Bool = false
     
@@ -35,9 +56,7 @@ public class DownloadSVGImage: ObservableObject {
         // Start loading
         self.isLoading = true
         
-        let resource = KF.ImageResource(downloadURL: url)
-        
-        KingfisherManager.shared.retrieveImage(with: resource) { [weak self] result in
+        KingfisherManager.shared.retrieveImage(with: url) { [weak self] result in
             DispatchQueue.main.async {
                 self?.isLoading = false
                 switch result {
@@ -74,4 +93,3 @@ extension CGImage {
         return cgImage
     }
 }
-
