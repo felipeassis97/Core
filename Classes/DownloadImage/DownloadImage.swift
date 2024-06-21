@@ -12,6 +12,10 @@ import Combine
 public struct ImageByURL: View {
     @StateObject private var downloader = ImageDownloader()
     let url: String
+    
+    public init(url: String) {
+        self.url = url
+    }
 
     public var body: some View {
         Group {

@@ -12,6 +12,10 @@ import Combine
 public struct SvgByURL: View {
     @StateObject private var downloader = SVGImageDownloader()
     let url: String
+    
+    public init(url: String) {
+        self.url = url
+    }
 
     public var body: some View {
         Group {
